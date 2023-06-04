@@ -1,0 +1,15 @@
+''Program that calculates savings and interest'''
+
+initial_savings = 10000
+interest_rate = 0.05
+
+years = int(input('Enter years: '))
+print()
+
+increment = 3
+savings = initial_savings
+for i in range(0,years,increment):
+    print(f' Savings in year {i}: ${savings:.2f}')
+    savings = savings + (savings*(increment*interest_rate))
+
+print('\n')
